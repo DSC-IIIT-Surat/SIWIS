@@ -7,6 +7,16 @@ Please refer to the project's style and naming conventions for submitting patche
 - Mention the issues in issues section only.
 - Use relevant tags for issues.
 
+### Coding Convention
+
+1. The `index.html` file on the top refers to homepage. 
+2. keep all the modules in the respective `module_name` html file.
+3. Keep all images and other binary files in `assets` folder.
+4. Keep all the CSS files in `styles` folder.
+5. Keep all the JavaScript files in the `js` folder
+
+
+
 ## Code Contribution
 
  1. *Fork* the repo on GitHub.
@@ -17,7 +27,7 @@ Please refer to the project's style and naming conventions for submitting patche
  4. *Push* your work back up to your fork.
    - If you are pushing a new branch:
    > ` git push --set-upstream origin new-branch-name`
-   - If the branch exists on your repo:
+  - If the branch exists on your repo:
    > ` git push`
  5. Submit a *Pull request* so that we can review your changes.
 
