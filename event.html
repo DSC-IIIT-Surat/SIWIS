@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="testing.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="https://www.wallpaperbetter.com/wallpaper/619/123/671/beautiful-space-planets-and-stars-red-and-blue-2K-wallpaper.jpg" style="background-size: cover; background-repeat: no-repeat;">
+<!-- <div class="whole"><img src="https://wallpaperaccess.com/full/2489665.jpg" alt=""></div> -->
+<div class="heading">
+    <h1> <span>U</span>PCOMING EVENTS</h1>
+</div>
+    <div class="up"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
+    <section id="home">
+        <div class="container">
+            <div class="left" style="background: url(https://previews.123rf.com/images/mamanamsai/mamanamsai1509/mamanamsai150900715/46093584-programming-concept-design-on-dark-background-clean-vector.jpg);">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h1>CODING COMPETETION</h1>
+                    <p id="demo" style="color: rgba(0, 0, 0, 0.596); font-weight: 900;"></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam hic quasi veniam molestias sit quos, delectus velit repellat odit repudiandae?</p>
+                    <a href="#" class="btn">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="left" style="background: url(https://i.pinimg.com/originals/0a/b2/68/0ab268c8a5918132e1bccb7291a7c351.jpg); background-size: cover;">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h1>GAMING COMPETETION</h1>
+                    <p id="demo2" style="color: rgba(0, 0, 0, 0.596); font-weight: 900;"></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam hic quasi veniam molestias sit quos, delectus velit repellat odit repudiandae?</p>
+                    <a href="#" class="btn">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="left" style="background: url(https://i.pinimg.com/originals/30/45/9c/30459c328f5f535509d3131f773ab10f.jpg); background-size: cover;">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h1>DANCING COMPETETION</h1>
+                    <p id="demo3" style="color: rgba(0, 0, 0, 0.596); font-weight: 900;"></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam hic quasi veniam molestias sit quos, delectus velit repellat odit repudiandae?</p>
+                    <a href="#" class="btn">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var countDownDate = new Date("may 17, 2021 23:59:59").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script> 
+        <script>
+            var countDownDate2 = new Date("may 18, 2021 23:59:59").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();
+              var distance = countDownDate2 - now;
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo2").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script> 
+            <script>
+                var countDownDate3 = new Date("may 19, 2021 23:59:59").getTime();
+                var x = setInterval(function() {
+                  var now = new Date().getTime();
+                  var distance = countDownDate3 - now;
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  document.getElementById("demo3").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo3").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script> 
+</body>
+</html>
