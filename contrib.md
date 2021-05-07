@@ -13,7 +13,7 @@ Please refer to the project's style and naming conventions for submitting patche
 2. keep all the modules in the respective `module_name` html file.
 3. Keep all images and other binary files in `assets` folder.
 4. Keep all the CSS files in `styles` folder.
-5. Keep all the JavaScript files in the `js` folder
+5. Keep all the JavaScript files in the `scripts` folder
 
 
 
