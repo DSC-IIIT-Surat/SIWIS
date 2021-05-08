@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Use this template carefully.
+1. The background image is predefined in scripts/landing.css  -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIWIS | by students of IIIT Surat</title>
-    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="../styles/landing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" />
 </head>
+
 <body>
     <section id="main1">
         <nav class="navigation">
@@ -22,27 +27,21 @@
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="https://www.linkedin.com/school/iiitsurat/about/" target="_blank" class="social"><i
-                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/IIITSurat" target="_blank" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/IIITSurat" target="_blank" class="social"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a></li>
             </ul>
         </nav>
-        <div class="heading">
-            <h1>TO CREATE</h1>
-            <h1>MOMENTS THAT LAST</h1>
-            <h1>A LIFETIME</h1>
-        </div>
-        <div class="btn">
-            <button type="submit"><a href="event.html">UPCOMING Events</a></button>
-        </div>
     </section>
     <script>
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.nav');
-        const links =  document.querySelectorAll('.nav li a');
+        const links = document.querySelectorAll('.nav li a');
 
         hamburger.addEventListener('click', () => {
             nav.classList.toggle("open");
         })
     </script>
 </body>
+
 </html>

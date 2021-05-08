@@ -3,20 +3,37 @@
 
 <head>
     <link rel="stylesheet" href="styles/event.css">
+    <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body
-    background="https://www.wallpaperbetter.com/wallpaper/619/123/671/beautiful-space-planets-and-stars-red-and-blue-2K-wallpaper.jpg"
-    style="background-size: cover; background-repeat: no-repeat;">
+<body>
     <!-- <div class="whole"><img src="https://wallpaperaccess.com/full/2489665.jpg" alt=""></div> -->
-    <div class="heading">
+    <nav class="navigation">
+        <div class="hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="https://www.linkedin.com/school/iiitsurat/about/" target="_blank" class="social"><i
+                        class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/IIITSurat" target="_blank" class="social"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <!-- <div class="heading">
         <h1> <span>U</span>PCOMING EVENTS</h1>
-    </div>
+    </div> -->
     <div class="up"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
     <section id="home">
         <div class="container">
@@ -117,6 +134,16 @@
             }
         }, 1000);
     </script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+        const links = document.querySelectorAll('.nav li a');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle("open");
+        })
+    </script>
+
 </body>
 
 </html>
