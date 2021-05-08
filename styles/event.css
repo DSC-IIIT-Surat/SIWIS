@@ -43,6 +43,9 @@ body {
 }
 
 body {
+    background-image: url("https://www.wallpaperbetter.com/wallpaper/619/123/671/beautiful-space-planets-and-stars-red-and-blue-2K-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
