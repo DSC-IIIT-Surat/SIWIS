@@ -1,27 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap');
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     scroll-behavior: smooth;
 }
-.whole{
+
+.whole {
+    width: 100%;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     position: fixed;
     z-index: -2000000;
 }
-.up
-{
+
+.up {
     position: fixed;
     align-items: flex-end;
     background: rgb(58, 58, 58);
@@ -29,36 +31,43 @@ body{
     border-radius: 180%;
     margin: 10px;
 }
-.up a i{
+
+.up a i {
     color: rgb(243, 243, 41);
     font-weight: 900;
     padding: 10px;
 }
-.up a i:hover{
+
+.up a i:hover {
     color: white;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: center;
-    border: 2px solid #ffffff;
-  border-radius: 10px;
+    border: 2px solid #00000000;
+    border-radius: 10px;
 }
-.heading h1{
+
+.heading h1 {
     margin-top: 50px;
     font-weight: 800;
     font-size: 2.5em;
-    color:#505050;
+    color: #ffffff;
     font-family: sans-serif;
 }
-.heading h1 span{
+
+.heading h1 span {
     font-size: 1.2em;
-    color: rgb(71, 71, 71);
+    color: rgb(182, 182, 182);
 }
-section{
+
+section {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -67,7 +76,8 @@ section{
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     margin: 50px;
     width: 100%;
     max-width: 1000px;
@@ -76,13 +86,15 @@ section{
     align-items: center;
     justify-content: center;
 }
-.left{
+
+.left {
     width: 60%;
     height: 600px;
     border-radius: 8px;
     background-size: cover;
 }
-.right{
+
+.right {
     width: 40%;
     min-height: 400px;
     background-color: #008f8f;
@@ -94,16 +106,19 @@ section{
     color: white;
     margin-left: -150px;
 }
-.right h1{
+
+.right h1 {
     font-size: 40px;
     font-weight: lighter;
 }
-.right p{
+
+.right p {
     margin: 20px;
     font-weight: 500;
     line-height: 25px;
 }
-.right a{
+
+.right a {
     text-decoration: none;
     text-transform: uppercase;
     background: white;
@@ -114,32 +129,36 @@ section{
     transition: 1s;
     border-radius: 5px;
 }
-.right a:hover{
+
+.right a:hover {
     letter-spacing: 5px;
     color: rgb(0, 0, 0);
     background: rgb(167, 167, 167);
 }
-@media only screen and (max-width:768px){
-    .container{
+
+@media only screen and (max-width:768px) {
+    .container {
         flex-direction: column;
         width: 100%;
         margin: 0 30px;
     }
-    .left{
+    .left {
         width: 100%;
         height: 400px;
         margin: 20px;
     }
-    .right{
+    .right {
         width: 90%;
         margin: 0;
         margin-top: -100px;
     }
 }
-#two{
+
+#two {
     background: url(https://i.pinimg.com/originals/0a/b2/68/0ab268c8a5918132e1bccb7291a7c351.jpg);
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
