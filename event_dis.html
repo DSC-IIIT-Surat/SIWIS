@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/event_dis.css">
+    <link rel="stylesheet" href="flipclock.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main1">
+        <section>
+            <div class="heading">
+                <h1>EVENT NAME</h1>
+            </div>
+            <div class="countdown">
+                <section class="time"><div id="day">NA</div></section>
+                <section class="time"><div id="hour">NA</div></section>
+                <section class="time"><div id="minute">NA</div></section>
+                <section class="time"><div id="second">NA</div></section>
+            </div>
+        </section>
+    </div>
+    <div class="discrip">
+        <div class="date">
+            <h6>May 30, 4:00 - 5:00</h6>
+        </div>
+        <section>
+            <div class="over">
+                <h2>Overview</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab maiores totam cum! Dolor, itaque.
+                    Repudiandae facilis voluptas aliquid amet delectus.</p>
+                <a href="#" class="a-button"><button>Register</button></a>
+            </div>
+            <div class="speak">
+                <h2>Speakers</h2>
+                <div id="speak1" class="speaker">
+                    <div class="img"><img
+                            src="https://d.wildapricot.net/images/default-album/bigstock--152868644.jpg"
+                            alt=""></div>
+                    <div class="name">
+                        <h3>First speaker</h3>
+                    </div>
+                </div>
+                <div id="speak2" class="speaker">
+                    <div class="img"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY3fOxQ6JyIPYcXai1TJHpCrWZoQ0TU-hcarVN0BdvZRCpHYOQ0RVjhiAzHJ7zdHP2K6g&usqp=CAU"
+                            alt=""></div>
+                    <div class="name">
+                        <h3>second speaker</h3>
+                    </div>
+                </div>
+                <div id="speak3" class="speaker">
+                    <div class="img">
+                        <img src="https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/2018/12/11165251/Event-Speakers.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>third speaker</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        var countDate = new Date('Jan 1, 2022 00:00:00').getTime();
+
+        function newYear(){
+            var now = new Date().getTime();
+                gap = countDate - now;
+
+                var second = 1000;
+                var minute = second*60;
+                var hour = minute*60;
+                var day = hour*24;
+
+                var d = Math.floor(gap / (day));
+                var h = Math.floor((gap % (day)) / (hour));
+                var m = Math.floor((gap % (hour)) / (minute));
+                var s = Math.floor((gap % (minute)) / (second));
+
+                document.getElementById('day').innerText = d;
+                document.getElementById('hour').innerText = h;
+                document.getElementById('minute').innerText = m;
+                document.getElementById('second').innerText = s;
+        }
+
+        setInterval(function() {
+            newYear();
+        },1000)
+    </script>
+</body>
+</html>
