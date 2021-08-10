@@ -2,6 +2,7 @@ let form = document.getElementById('form');
 let form2 = document.getElementById('form2');
 let dis = document.getElementById('dis');
 let main1 = document.getElementById('main1');
+let gallery = document.getElementById('gallery');
 function register(){
      form.style.clipPath = 'inset(0 0 0 0)';
      dis.style.opacity = '0.1';
@@ -12,6 +13,16 @@ function clos(){
       dis.style.opacity = '1';
      main1.style.opacity = '1';
 }
+function right(){
+    gallery.scrollLeft += 300;
+}
+function left(){
+    gallery.scrollLeft -= 300;
+}
+
+
+
+
 
 
 
@@ -37,6 +48,3 @@ function newYear(){
         document.getElementById('second').innerText = s;
     }
     
-    setInterval(function() {
-        newYear();
-    },1000)
