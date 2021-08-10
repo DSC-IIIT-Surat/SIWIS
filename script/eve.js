@@ -48,3 +48,6 @@ function newYear(){
         document.getElementById('second').innerText = s;
     }
     
+    setInterval(function() {
+        newYear();
+    },1000)
