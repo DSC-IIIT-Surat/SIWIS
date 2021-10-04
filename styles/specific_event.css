@@ -80,7 +80,34 @@ button{
     text-align: center;
     font-weight: bold;
 }
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
 
+
+.container{
+      padding:20px;
+      text-align: center;
+      color: #2a2b2c;
+  }
+
+.youtube{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gform{
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      padding: 10px;
+  }
 
   .footer{
     bottom: 0;
