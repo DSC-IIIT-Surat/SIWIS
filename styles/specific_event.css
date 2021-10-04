@@ -43,8 +43,45 @@ a{
     color:#E5E7EB;
 }
 
+.main{
+    background-color: #1E2937;
+    background-image:url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: 100% 110vh;
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+}
 
- 
+.main h1{
+    margin: 0;
+    padding: 0;
+    font-size:55px;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+}
+
+.main p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(24, 24, 24);
+}
+
+button{
+    display: block;
+    background-color: black;
+    color: #FFFFFF;
+    border: #FFFFFF solid 2px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
   .footer{
     bottom: 0;
     left: 0;
