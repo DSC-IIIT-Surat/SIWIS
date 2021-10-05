@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding:0;
-    background-color:#FFFFFF;
+    background-color:#000;
     font-family: 'Roboto', arial;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ body{
 .navbar a:hover { 
     color: #000000;
     font-weight: bolder;
-    text-shadow: 0 0 5px #FFFFFF
+    text-shadow: 0 0 5px #FFFFFF;
  }
 
 /*banner area*/
@@ -104,56 +104,108 @@ button:hover{
 
 /*Event card container*/
 
-  .eventcontainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    text-align: center;
-    justify-content: flex-start;
-    padding: 30px;
-    gap:20px;
+.eventcontainer {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
-  .event{
-    background-color: transparent;
-    width: 400px;
-    height: 500px;
-    perspective: 1000px;
-  }
-  
-  .eventcard{
+
+.card {
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-  }
-  
-  .event:hover{
-    transform: rotateY(180deg);
-  }
-  
-  .eventfront, .eventback{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.face {
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .eventfront{
-      background-color:#c74686;
-      color:black;
-  }
-  
-  .eventback{
-    background-color:rgb(224, 140, 182);
-    color: whitesmoke;
-    transform: rotateY(180deg);
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+.back h2{
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    background-color: #fffc00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dates {
+    background-color: #00fffc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details {
+    background-color: #fc00ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.front {
+    transition: 0.5s;
+}
+
+.card:hover .face.front {
+    height: 60px;
+}
+.card:hover h2 {
+    font-size: 1.5em;
+}
+.card:nth-child(1) .face.front {
+    background-image: linear-gradient(
+    -45deg,
+    #fffc00 0%,
+    #fc00ff 45%,
+    #00fffc 100%
+    );
+    border-radius: 15px;
+}
+
+.card:nth-child(2) .face.front {
+    background-image: linear-gradient(
+        45deg,
+        #fc00ff 0%,
+        #00fffc 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+}
+
+.card:nth-child(3) .face.front {
+    background-image: linear-gradient(
+        -45deg,
+        #00fffc 0%,
+        #fc00ff 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+}
+
+
 
 /*Embedded youtube link area*/
+
 #youtube{
     display: flex;
     justify-content: center;
@@ -176,7 +228,6 @@ button:hover{
     height: 30px;
     display: flex;
     justify-content: center;
-    background-color:#E5E7EB;
-    color:black;
+    color:#FFFFFF;
     font-size: 15px;
 }
