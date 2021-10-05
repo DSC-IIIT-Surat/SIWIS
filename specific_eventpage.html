@@ -9,35 +9,50 @@
     <link rel="stylesheet" href="styles/specific_event.css">
 </head>
 <body>
-    <div class="maincontainer">
-        <div class="navbar">
-                <h1>Logo </h1>
-                <div class="links">
-                    <a href='#'>Home</a>
-                    <a href='#'>About</a>
-                    <a href='#gform'>Register</a>
-                </div>
+    <div class="section1">
+        <nav class="navbar">
+            <h2>Logo</h2>
+            <ul>
+                <li><a href='event.html'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#gform'>Register</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>EVENT NAME</h1>
+            <p>ONE LINER ABOUT THE EVENT</p>
+            <button onclick='window.location="#gform"'>REGISTER</button>
         </div>
-        <div class="main">
-            <div class="banner">
-                <h1>EVENT NAME</h1>
-                <p>ONE LINER ABOUT THE EVENT</p>
-                <button onclick='window.location="#gform"'>Register</button>
-            </div>
-        </div>
-        <div class="container">
-            ABOUT EVENT
-        </div>
-        <div class="youtube">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wAPCSnAhhC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>     
-        <div class="gform">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdycD9ON-3Pt4TEbUq8m-lAFvqiP73qGxnKeJV5rVii0vQSjg/viewform?embedded=true" width="640" height="230" frameborder="0" marginheight="0" marginwidth="0">Event Registration</iframe>
-        </div>
+    </div>
+    <div class="eventcontainer">
+        ABOUT EVENT
+    </div>
+      <!--I have added a random yt video from, you can change the link to your specific yt link.
+        Steps to embed a yt video:
+        1.Go to your selected yt video
+        2.Click the share button
+        3.Select the <> option 
+        5.Copy the link provided
+        6.Paste in the div with id:Youtube
+    -->
+    <div id="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wAPCSnAhhC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+    <!--I have added a test gform from my gmail account, you can change the link to your specific gform.
+        Steps to embed a gform:
+        1.Go to your selected gform
+        2.Click the share button
+        3.Select the <> option 
+        4.Specify the height and width(Current: H-230 W-640)
+        5.Copy the link provided
+        6.Paste in the div with id:Gform
+    -->   
+    <div id="gform">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdycD9ON-3Pt4TEbUq8m-lAFvqiP73qGxnKeJV5rVii0vQSjg/viewform?embedded=true" width="640" height="230" frameborder="0" marginheight="0" marginwidth="0">Event Registration</iframe>
+    </div>
     <div class="footer">
         footer details if needed.
     </div>
-</div>
 </body>
 </html>
 

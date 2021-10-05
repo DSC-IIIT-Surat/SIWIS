@@ -1,35 +1,42 @@
 body{
     margin: 0;
     padding:0;
-    background-color:black;
+    background-color:#FFFFFF;
     font-family: 'Roboto', arial;
-}
-.mainbody{
     display: flex;
     flex-direction: column;
     flex-basis: auto;
+}
+
+.section1{
+    background-color: #1E2937;
+    background-image:url("https://wallpapercave.com/wp/wp6933503.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /* Navigation bar */
 
 .navbar{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 72px;
+    height: 50px;
+    width: 100%;
     color: #F9FAF8;
-    background-color:#000;
-    padding-left: 150px;
-    padding-right: 150px;
+    background-color:white;
 }
 
-.navbar h1{
+.navbar h2{
     font-size: 24px;
     color:#F9FAF8;
     font-weight: bold;
 }
 
-.links{
+.navbar ul{
+    list-style: none;
     margin:0;
     padding:0;
     display:flex;
@@ -37,49 +44,12 @@ body{
     font-size:18px;
     gap:20px;
 } 
-
-a{
+.navbar a{
     text-decoration: none;
     color:#E5E7EB;
 }
 
-.main{
-    background-color: #1E2937;
-    background-image:url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-repeat: no-repeat;
-    background-size: 100% 110vh;
-    display: flex;
-    flex-direction: column;
-    padding: 150px;
-}
-
-.main h1{
-    margin: 0;
-    padding: 0;
-    font-size:55px;
-    font-weight: bolder;
-    color:rgb(0, 0, 0);
-}
-
-.main p{
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: rgb(24, 24, 24);
-}
-
-button{
-    display: block;
-    background-color: black;
-    color: #FFFFFF;
-    border: #FFFFFF solid 2px;
-    margin: 10px;
-    border-radius: 5px;
-    height: 40px;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-}
+/*banner area*/
 .banner{
     display: flex;
     flex-direction: column;
@@ -88,35 +58,70 @@ button{
     gap:15px;
 }
 
+.banner h1{
+    margin: 0;
+    padding: 0;
+    font-size:55px;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+}
 
-.container{
+.banner p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(24, 24, 24);
+}
+
+.banner button{
+    display: block;
+    background: transparent;
+    color: rgb(255, 252, 94);
+    border: #000 solid 2px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color:#000;
+    color: #FFFFFF;
+    border: #FFFFFF solid 2px;
+}
+
+/*Event card container*/
+.eventcontainer{
       padding:20px;
       text-align: center;
       color: #2a2b2c;
   }
 
-.youtube{
-    padding: 50px;
+/*Embedded youtube link area*/
+#youtube{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
   }
 
-  .gform{
+/*Embedded Google form area*/
+  #gform{
       display: flex;
       justify-content: center;
       margin: 20px;
       padding: 10px;
   }
 
+/*Footer*/
   .footer{
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
+    margin: 0;
+    padding: 10px 0 0 0;
+    height: 30px;
     display: flex;
-    align-items: center;;
-    justify-content:space-evenly;
+    justify-content: center;
     background-color:#E5E7EB;
     color:black;
     font-size: 15px;
