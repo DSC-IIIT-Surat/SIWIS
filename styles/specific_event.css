@@ -114,13 +114,15 @@ button:hover{
 }
 
 .card {
+    text-align: center;
     position: relative;
-    width: 300px;
+    width: 280px;
     height: 400px;
     margin: 0 auto;
     background: #000;
     border-radius: 15px;
     box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
 }
 
 .face {
@@ -139,27 +141,9 @@ button:hover{
     border: 2px solid #fff;
     border-radius: 15px;
 }
-.back h2{
+.back h1{
     margin: 0;
     padding: 0;
-}
-
-.about {
-    background-color: #fffc00;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.dates {
-    background-color: #00fffc;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.details {
-    background-color: #fc00ff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .front {
@@ -167,41 +151,33 @@ button:hover{
 }
 
 .card:hover .face.front {
-    height: 60px;
+    height: 20px;
+    border-radius: 15px;
+    background: #fff;
 }
 .card:hover h2 {
-    font-size: 1.5em;
+    font-size: 0em;
 }
-.card:nth-child(1) .face.front {
-    background-image: linear-gradient(
-    -45deg,
-    #fffc00 0%,
-    #fc00ff 45%,
-    #00fffc 100%
-    );
+
+.card:hover h1 {
+    font-size: 2em;
+}
+.card .face.front {
+    background-image: url("https://images.pexels.com/photos/2923591/pexels-photo-2923591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     border-radius: 15px;
 }
 
-.card:nth-child(2) .face.front {
-    background-image: linear-gradient(
-        45deg,
-        #fc00ff 0%,
-        #00fffc 45%,
-        #fffc00 100%
-      );
-      border-radius: 15px;
+.report{
+    background-color:#E5E7EB;
+    font-weight: light;
+    font-style: italic;
+    font-size:30px;
+    color:#1E2937;
+    padding: 100px;
+    text-align: center;
 }
-
-.card:nth-child(3) .face.front {
-    background-image: linear-gradient(
-        -45deg,
-        #00fffc 0%,
-        #fc00ff 45%,
-        #fffc00 100%
-      );
-      border-radius: 15px;
-}
-
 
 
 /*Embedded youtube link area*/
