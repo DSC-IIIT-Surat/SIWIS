@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color:#000;
+    font-family: 'Roboto', arial;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+.section1{
+    background-image:url("https://wallpapercave.com/wp/wp6933503.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Navigation bar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color:transparent;
+}
+
+.navbar h2{
+    margin: 10px;
+    font-size: 24px;
+    color:#F9FAF8;
+    font-weight: bold;
+}
+
+.navbar ul{
+    list-style: none;
+    margin:0;
+    text-align: center;
+    padding:15px 10px 10px 10px;
+    display:flex;
+    justify-content: space-between;
+    font-size:18px;
+    gap:20px;
+} 
+
+.navbar a{
+    text-decoration: none;
+    color:#E5E7EB;
+}
+
+.navbar a:hover { 
+    color: #000000;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #FFFFFF;
+ }
+
+/*banner area*/
+.banner{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.banner h1{
+    margin: 0;
+    padding: 0;
+    font-size:70px;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+}
+
+.banner p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: rgb(24, 24, 24);
+}
+
+.banner button{
+    display: block;
+    background: transparent;
+    color: #FFFFFF;
+    border: #fff solid 2px;
+    margin: 30px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color:#FFFFFF;
+    color: #000;
+}
+
+/*Event card container*/
+
+.eventcontainer {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.card {
+    text-align: center;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+}
+
+.face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.back h1{
+    margin: 0;
+    padding: 0;
+}
+
+.front {
+    transition: 0.5s;
+}
+
+.card:hover .face.front {
+    height: 20px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.card:hover h2 {
+    font-size: 0em;
+}
+
+.card:hover h1 {
+    font-size: 2em;
+}
+
+.card .face.front {
+    background-image: url("https://images.pexels.com/photos/2923591/pexels-photo-2923591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 15px;
+}
+
+/*Report section*/
+.report{
+    background-color:#E5E7EB;
+    font-weight: light;
+    font-style: italic;
+    font-size:30px;
+    color:#1E2937;
+    padding: 100px;
+    text-align: center;
+}
+
+
+/*Embedded youtube link area*/
+
+#youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+/*Embedded Google form area*/
+  #gform{
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      padding: 10px;
+  }
+
+/*Footer*/
+  .footer{
+    margin: 0;
+    padding: 10px 0 0 0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    color:#FFFFFF;
+    font-size: 15px;
+}
